@@ -4920,7 +4920,32 @@ ModelImporter:
     4301874: Cylinder_1_7_3
     4301876: Cylinder_1_8_3
     4301878: Cylinder_1_9_3
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: G006
+    second: {fileID: 2800000, guid: 084ab20995dda3841aec8a81747006b2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: G006BM
+    second: {fileID: 2800000, guid: eedac1e76a0b68b4a89c5af1eebf1469, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: flammable
+    second: {fileID: 2800000, guid: fc09fe111e5c7f341a15a4f46ed1829e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: rust color
+    second: {fileID: 2800000, guid: d54df29ff07fa484586b9b636d70a0a4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: rustalpha
+    second: {fileID: 2800000, guid: 2ba3552081b3b5545865d6016c4cda37, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
