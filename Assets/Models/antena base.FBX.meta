@@ -12,6 +12,16 @@ ModelImporter:
     4300000: antenna base
   externalObjects:
   - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Base_O
+    second: {fileID: 2100000, guid: 04d43307c1b48f948a81fcddb56a4761, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BridgeB
+    second: {fileID: 2100000, guid: 8f0dee54ce8e1bf4189f3011ee0b6958, type: 2}
+  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: BridgeD

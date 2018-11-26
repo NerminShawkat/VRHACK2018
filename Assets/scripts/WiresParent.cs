@@ -11,25 +11,28 @@ public class WiresParent : MonoBehaviour
     public int CorrectWires = 0;
     public int _sectionsize;
     public GameObject[] completedsections;
+    public Transform parent;
+    public  string[] files;
     // Use this for initialization
     void Awake()
     {
         materials = new Dictionary<string, Material>();
-        string[] files = Directory.GetFiles(Application.dataPath + "/Resources/Wires");
+        // = Directory.GetFiles(Application.re + "/Resources/Wires");
+        Debug.Log(files.Length);
         for (int i = 0; i < files.Length; i++)
         {
             if (files[i].Contains("meta"))
                 continue;
             else
             {
-                string splitter = @"\";
-                string name = (files[i].Split(splitter[0]))[1];
-                name = name.Substring(0, name.Length - 4);
-                materials.Add(name, Resources.Load("Wires/" + name) as Material);
+                //string splitter = @"\";
+                string name = files[i];// (files[i].Split(splitter[0]))[1];
+                //name = name.Substring(0, name.Length - 4);
+                materials.Add(name, Resources.Load<Material>("Wires/" + name) );
             }
         }
 
-        _sectionsize = transform.childCount / 4;
+        _sectionsize = parent.childCount / 4;
     }
 
     public Material GetMaterial(string colorname)

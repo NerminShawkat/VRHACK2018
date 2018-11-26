@@ -24,6 +24,7 @@ public class SelectableColor : MonoBehaviour {
 
     private void Start()
     {
+        SelectedColor = "Green";
         _myInteractableObject.InteractableObjectTouched += _myInteractableObject_InteractableObjectTouched;
         _myInteractableObject.InteractableObjectUntouched += _myInteractableObject_InteractableObjectUntouched;
         _controllerEvents.TriggerClicked += _controllerEvents_TriggerClicked;

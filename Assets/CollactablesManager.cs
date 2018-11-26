@@ -1,12 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using VRTK;
 
 public class CollactablesManager : GameItem {
 
     [SerializeField]
     CollactableItem[] _collactablesList;
     Dictionary<Collectable.Type, int> _collactables ;
+    public VRTK_BasicTeleport teleporter;
+    public GameObject glass;
+    public Transform position;
 
     private void Start()
     {
@@ -51,6 +55,7 @@ public class CollactablesManager : GameItem {
     public override void FinishGame()
     {
         _onFinish.Invoke();
+        teleporter.ForceTeleport(position.position, position.rotation);
     }
 }
 [System.Serializable]
